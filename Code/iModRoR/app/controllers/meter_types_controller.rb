@@ -1,0 +1,2 @@
+class MeterTypesController < ApplicationController
+end
