@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :alarms
+
+  resources :lectures
+
+  resources :meters
+
+  resources :meter_types
+
+  resources :properties
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

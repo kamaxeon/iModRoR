@@ -95,6 +95,11 @@ package { 'vim':
   ensure => installed
 }
 
+#Phantomjs
+package { 'phantomjs':
+  ensure => installed
+}
+
 # --- Ruby ---------------------------------------------------------------------
 
 exec { 'install_rvm':

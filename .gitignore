@@ -1,3 +1,17 @@
 # Vagrant Files
 ###############
 .vagrant
+
+
+# Rails
+#######
+# Ignore bundler config.
+/Code/iModRoR/.bundle
+
+# Ignore the default SQLite database.
+/Code/iModRoR/db/*.sqlite3
+/Code/iModRoR/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/Code/iModRoR/log/*.log
+/Code/iModRoR/tmp
