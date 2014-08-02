@@ -2,7 +2,7 @@ class Meter < ActiveRecord::Base
   validates :mbus_address, numericality : {
     only_integer: true,
     greater_than: 0,
-    less_than: 6,
+    less_than: 256,
     allow_blank: false } , uniqueness: true
   belongs_to :propertry
   belongs_to :meter_type
@@ -10,7 +10,7 @@ class Meter < ActiveRecord::Base
   has_many :alarms,   dependent: :destroy
   after_initialize :default_values
 
-  scope:active_alerts, -> { where(sent_alert: true)}
+  scope :sent_alerts, -> { where(sent_alert: true)}
 
   private
   def default_values
